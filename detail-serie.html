@@ -10,26 +10,36 @@
 <body>
     <header>
         <!-- logo -->
-        <img src="#" alt=" Views logo">
+        
         <!-- botones menu-->
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="genres.html">Generos</a></li>
-                <li><a href="favourite.html">Favoritos</a></li>
+            <ul class="botones">
+                <li class="logo">
+                    <img src="#" alt=" Views logo">
+                </li>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="genres.html">Generos</a>
+                </li>
+                <li>
+                    <a href="favourite.html">Favoritos</a>
+                </li>
+                <li> 
+                    <form action="search-results.html" method="GET">
+                        <input type="text" name="search" placeholder="Buscar...">
+                        <button type="submit">Enviar</button>
+                    </form>
+                </li>
             </ul>
         </nav>
-        <!-- buscador -->
-        <div>
-           <form action="search-results.html" method="GET">
-               <input type="text" name="search" placeholder="Buscar...">
-               <button type="submit">Enviar</button>
-           </form>
-        </div>
+        
+       
     </header>
     <main>
         <section>
-            <img src="./img/serie-detail.jpg" alt="foto la casa de papel">
+            <img class="portada" src="./img/serie-detail.jpg" alt="foto la casa de papel">
             <article>
                 <h1>La Casa de Papel</h1>
                 <p>Fecha de estreno: 2 de Mayo de 2017</p>

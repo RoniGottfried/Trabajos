@@ -1,3 +1,37 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(38, 28, 44);
+}
+/* header */
+header{
+    background-color:rgb(92, 82, 127);
+    padding:1px ;
+  
+}
+
+.botones li {
+    list-style-type: none;
+    background-color: rgb(110, 133, 178);
+    padding: 7px 12px;
+}
+
+.botones li a{
+    text-decoration: none;
+    color: black;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* lo hice para sacarle el background color de los otros que van a ser botones, cambiarle el white por el color del fondo que elijamos */
+.botones .logo{
+    background-color: white;
+}
+
+/* detalle serie */
+.portada{}
+
