@@ -3,6 +3,9 @@
 }
 body{
     background-color: rgb(38, 28, 44);
+    /* font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif; */
+    
 }
 /* header */
 header{
@@ -20,6 +23,8 @@ header{
 .botones li a{
     text-decoration: none;
     color: black;
+    font-family: 'Bebas Neue', cursive;
+    
 }
 
 .botones{
@@ -33,5 +38,15 @@ header{
 }
 
 /* detalle serie */
+.tituloserie{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 50px;
+}
+.sinopsis{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: justify;
+}
 
 
