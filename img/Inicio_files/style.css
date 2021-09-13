@@ -47,7 +47,7 @@ header{
 .img-home{
     width: 200px;
     height: 225px;
-    padding: 5%;
+    padding-left: 0%;
 }
 
 .series-populares{
