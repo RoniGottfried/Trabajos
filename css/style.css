@@ -168,8 +168,8 @@ article ul li{
 
 /* tamaño de la imagen */
 .buscado section img{
-    width: 60%;
-    height: 380px;
+    width: 70%;
+    height: 500px;
 }
 
 .detalle{
@@ -186,6 +186,11 @@ article ul li{
     display: flex;
     display: inline-block;
 }
+
+.otras-sw li img{
+    height: 60px;
+}
+
 
 
    
