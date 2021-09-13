@@ -2,29 +2,35 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(38, 28, 44);
-    /* font-family: 'Bebas Neue', cursive;
-    font-family: 'Roboto', sans-serif; */
+    background-color:rgb(46, 45, 45);
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+    color: white;
     
 }
 /* header */
 header{
-    background-color:rgb(92, 82, 127);
+    background-color:rgb(100, 89, 139);
     padding:1px ;
-  
+}
+
+#logo{
+    width: 160px;
+    height: 40px;
 }
 
 .botones li {
     list-style-type: none;
-    background-color: rgb(110, 133, 178);
-    padding: 7px 12px;
+    /* background-color: rgb(110, 133, 178); */
+    padding: 8px 50px;
+    margin: 0px;
 }
 
 .botones li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: 'Bebas Neue', cursive;
-    
+    font-size: 20px;
 }
 
 .botones{
@@ -32,9 +38,8 @@ header{
     justify-content: space-around;
 }
 
-/* lo hice para sacarle el background color de los otros que van a ser botones, cambiarle el white por el color del fondo que elijamos */
-.botones .logo{
-    background-color: white;
+.partelogo{
+    list-style-type: none;
 }
 
 /* detalle serie */
@@ -42,11 +47,33 @@ header{
     font-family: 'Bebas Neue', cursive;
     color: white;
     font-size: 50px;
+    box-sizing: border-box;
+    margin: 0%;
+    display: flex;
 }
+
+.bloque-serie {
+    display: flex;
+    flex-direction: row;
+}
+
+.intento{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .sinopsis{
     font-family: 'Roboto', sans-serif;
     color: white;
     text-align: justify;
 }
 
+.tituloyfecha li {
+    list-style-type: none;
+    display: flex;
+}
 
+.portada{
+    box-sizing: border-box;
+    margin: 4px 0px;
+}
