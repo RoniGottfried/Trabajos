@@ -45,8 +45,8 @@ header{
 /* inicio */
 
 .img-home{
-    width: 200px;
-    height: 225px;
+    width: 275px;
+    height: 280px;
     padding: 5%;
 }
 
@@ -58,6 +58,25 @@ header{
     list-style-type: none;
 }
 
+.peliculas-populares{
+    display: flex;
+    justify-content: first baseline;
+}
+
+.peliculas-populares li{
+    list-style-type: none;
+}
+
+.lo-mas-visto{
+    display: flex;
+    justify-content: left;
+}
+
+.lo-mas-visto li{
+    list-style-type: none;
+}
+
+
 /* detalle serie */
 .tituloserie{
     font-family: 'Bebas Neue', cursive;
@@ -66,6 +85,7 @@ header{
     box-sizing: border-box;
     margin: 0%;
     display: flex;
+    
 }
 
 .bloque-serie {
@@ -76,6 +96,7 @@ header{
 .intento{
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 5%;
 }
 
 .sinopsis{
@@ -89,7 +110,22 @@ header{
     display: flex;
 }
 
+article ul li{
+    display: flex;
+    justify-content: space-between;
+}
+
 .portada{
     box-sizing: border-box;
     margin: 4px 0px;
+    width: 472px;
+    height: 368px;
+}
+
+.bloque-sinopsis{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.301);
+    width: 105%;
+    padding: 4%;
+    
 }
