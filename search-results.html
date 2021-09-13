@@ -2,11 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
+    <div class="main-container">
+        <header>
+            <!-- logo -->
+            
+            <!-- botones menu-->
+            <nav>
+                 <ul class="botones">
+                     <img id="logo" href="index.html" src="./img/logo.jpeg" alt=" Views logo">
+                     <li>
+                         <a href="index.html">Series</a>
+                     </li>
     
+                     <li>
+                         <a href="index.html">Peliculas</a>
+                     </li>
+                     <li>
+                         <a href="genres.html">Generos</a>
+                     </li>
+                     <li>
+                     <a href="favourite.html">Favoritos</a>
+                     </li>
+    
+                    <li> 
+                     <form action="search-results.html" method="GET">
+                     <input type="text" name="search" placeholder="Buscar...">
+                     <button type="submit">Enviar</button>
+                    </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main >
+           <div class = "buscado">
+                <!-- buscado -->
+                <section>
+                    <!-- <h1>Star Wars: Episodio II</h1> -->
+                    <h1>Busquedas encontradas</h1>
+                    
+                </section>
+
+                <!-- detalle -->
+                <section class= "detalle">
+                    <img src="img/sw-banner.jpg" alt="Portada de star Wars">
+                    <article>
+                        <h1>Star Wars: Episodio II - El ataque de los clones</h1>
+                        <p>Fecha de estreno: 16 de mayo de 2002</p>
+                        <p> Después de la Batalla de Naboo, la galaxia se encuentra al borde de una guerra civil. Bajo la dirección de un Jedi renegado que se hace llamar Conde Dooku, muchos sistemas solares amenazan con la secesión de la República Galáctica. Tras los intentos de asesinato de la senadora Padmé Amidala, la anterior reina de Naboo, el Padawan Anakin Skywalker es asignado para protegerla, mientras que a su maestro, Obi-Wan Kenobi, se le asigna la investigación del intento de asesinato.</p>
+                    </article>
+                    <article class= "similares">
+                        <h1>SIMILARES</h1>
+                        <ul>
+                            <li>
+                                <a href="#">Star Wars: Episodio I - La amenaza fantasma</a>
+                            </li>
+                            <li>
+                                <a href="#">Star Wars: Episodio III - La venganza de los Sith</a>
+                            </li>
+                            <li>
+                                <a href="#">Star Wars: Episodio IV - Una nueva esperanza</a>
+                            </li>
+                            <li>
+                                <a href="#">Star Wars: Episodio V - El Imperio contraataca</a>
+                            </li>
+                            <li>
+                                <a href="#">Star Wars: Episode VI - Return of the Jedi</a>
+                            </li>
+                            <li>
+                                <a href="#">Star Wars: Episodio VII - El despertar de la Fuerza</a>
+                            </li>
+                            <li>
+                                <a href="#">Star Wars: Episodio VIII - Los últimos Jedi</a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+
+                <!-- similiares -->
+                <section>
+
+                </section>
+           </div>
+           <div>
+
+           </div>
+        </main>
+            
+        <footer>
+                <p>
+                    Catalina Martinez, Roni Gottfried y Felipe Nicolas Sin
+                </p>
+        </footer>
+      </div>  
 </body>
 </html>
