@@ -94,9 +94,7 @@ header{
 }
 
 .intento{
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 5%;
+   margin: 5%; 
 }
 
 .sinopsis{
@@ -129,3 +127,40 @@ article ul li{
     padding: 4%;
     
 }
+
+/* detalle pelicula */
+.titulo-peli{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 50px;
+    box-sizing: border-box;
+    margin: 0%;
+    display: flex;
+}
+
+.bloque-pelicula{
+    display: flex;
+    flex-direction: row;
+}
+
+.portada-pelicula{
+    width: 85%;
+    height: 30%;
+    margin: 4px 0px;
+}
+.peli{
+    margin: 5%;
+}
+
+
+.bloque-sinopsis-peli{
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.301);
+    width:100%;
+    padding: 4%;
+}
+.bloque-pelicula section{
+    display: block;
+    justify-content: space-around
+}
+   
