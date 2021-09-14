@@ -191,6 +191,19 @@ article ul li{
     height: 60px;
 }
 
+/* Generos */
+
+
+/* Favoritos */
+
+.favoritos{
+    display: flex;
+    justify-content: first baseline;
+}
+
+.favoritos li {
+    list-style-type: none;
+}
 
 
    
