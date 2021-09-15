@@ -172,7 +172,8 @@ article ul li{
     height: 500px;
 }
 
-.detalle{
+/* pone todo uno al lado del otro */
+.main{
     display: flex;
     flex-direction: row;
 }
@@ -187,10 +188,22 @@ article ul li{
     display: inline-block;
 }
 
-.otras-sw li img{
-    height: 60px;
+.otras-sw li{
+    display: flex;
+    display: inline;
+    list-style-type: none;
+    initial-letter-align: right;
+    background-color: wheat;
+    font-size: 80%;
 }
 
+/* .otras-sw li img{
+    height: 60px;
+} */
+
+.detalle h1{
+    font-size: 30px;
+}
 
 
    
