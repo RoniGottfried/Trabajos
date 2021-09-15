@@ -51,13 +51,16 @@ header{
 }
 
 .series-populares{
+    width: 100%;
     display: flex;
-    justify-content: first baseline;
-}
-.series-populares li {
-    list-style-type: none;
+    justify-content: space-between;
 }
 
+.art-series{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.493);
+    width:15%
+}
 .peliculas-populares{
     display: flex;
     justify-content: first baseline;
