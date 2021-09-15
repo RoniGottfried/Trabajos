@@ -197,12 +197,18 @@ article ul li{
     font-size: 80%;
 }
 
-/* .otras-sw li img{
-    height: 60px;
-} */
+/* Generos */
 
-.detalle h1{
-    font-size: 30px;
+
+/* Favoritos */
+
+.favoritos{
+    display: flex;
+    justify-content: first baseline;
+}
+
+.favoritos li {
+    list-style-type: none;
 }
 
 

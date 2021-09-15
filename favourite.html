@@ -2,11 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
     <title>Favourite</title>
 </head>
+
 <body>
+
+    <header>
+        <!-- botones menu y logo -->
+        <nav>
+             <ul class="botones">
+                 <img id="logo" href="index.html" src="./img/logo.jpeg" alt=" Views logo">
+                 <li>
+                     <a href="index.html">Series</a>
+                 </li>
+
+                 <li>
+                     <a href="index.html">Peliculas</a>
+                 </li>
+                 <li>
+                     <a href="genres.html">Generos</a>
+                 </li>
+                 <li>
+                     <a href="favourite.html">Favoritos</a>
+                 </li>
+
+                <li> 
+                 <form action="search-results.html" method="GET">
+                     <input type="text" name="search" placeholder="Buscar...">
+                     <button type="submit">Enviar</button>
+                 </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     
+<main>
+
+    <div>
+        <h2>Favoritos</h2>
+           <ul class="favoritos"> 
+               <li>
+                   <a href="detail-serie.html"><img class= "img-home" src="./img/visavis.jpg" alt="caratula-vis-a-vis"></a>
+                </li>
+                <li>
+                    <a href="detail-serie.html"><img class= "img-home" src="./img/casadepapelcaratula.jpg" alt="caratula-la-casa-de-papel"></a>
+                 </li>
+                 <li>
+                    <a href="detail-serie.html"><img class= "img-home" src="./img/thebold.jpg" alt="caratula-the-bold-type"></a>
+                 </li>
+                 <li>
+                    <a href="detail-serie.html"><img class= "img-home" src="./img/brooklyn.jpg" alt="caratula-de-brooklyn"></a>
+                 </li>
+                 <li>
+                    <a href="detail-serie.html"><img class= "img-home" src="./img/gossip.jpg" alt="caratula-gossip-girl"></a>
+                 </li>
+           </ul>
+       </div>
+
+</main>
+
 </body>
 </html>
