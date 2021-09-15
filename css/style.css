@@ -178,7 +178,7 @@ article ul li{
     flex-direction: row;
 }
 
-.similares h1{
+/* .similares h1{
     display: flex;
     justify-content: center;
 }
@@ -186,6 +186,19 @@ article ul li{
 .similares li{
     display: flex;
     display: inline-block;
+} */
+
+div.detalle{
+    display: flex;
+    justify-content: center;
+}
+
+div img{
+    width: 100%;
+}
+
+.detalle{
+    width: 50%;
 }
 
 .otras-sw li{
@@ -193,7 +206,7 @@ article ul li{
     display: inline;
     list-style-type: none;
     initial-letter-align: right;
-    background-color: wheat;
+    background-color: rgb(218, 218, 218);
     font-size: 80%;
 }
 
