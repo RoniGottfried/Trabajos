@@ -168,18 +168,17 @@ article ul li{
 
 .bloque-sinopsis{
     display: flex;
-    background-color: rgba(128, 128, 128, 0.301);
+    background-color:rgba(135, 124, 172, 0.575);
     width: 105%;
     padding: 4%;
     
 }
 
-/* detalle pelicula */
+/* detalle pelicula*/
 .titulo-peli{
     font-family: 'Bebas Neue', cursive;
     color: white;
     font-size: 50px;
-    box-sizing: border-box;
     margin: 0%;
     display: flex;
 }
@@ -187,27 +186,38 @@ article ul li{
 .bloque-pelicula{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-.portada-pelicula{
-    width: 85%;
-    height: 30%;
-    margin: 4px 0px;
+.imagen-pelicula{
+    width: 50%;
 }
+
 .peli{
+    width: 50%;
+    margin: 5% ;
+}
+
+.imagen-pelicula .portada-pelicula{
+    width: 90%;
+    height: 90%;
     margin: 5%;
 }
 
 
 .bloque-sinopsis-peli{
     display: flex;
-    background-color: rgba(128, 128, 128, 0.301);
+    background-color: rgba(135, 124, 172, 0.575);
     width:100%;
     padding: 4%;
 }
 .bloque-pelicula section{
     display: block;
     justify-content: space-around
+}
+
+a{
+    color: blueviolet;
 }
 
 /* search-results (roni) */
