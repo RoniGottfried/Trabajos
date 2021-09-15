@@ -42,13 +42,8 @@ header{
 }
 
 
-/* inicio */
-
-.img-home{
-    width: 275px;
-    height: 280px;
-    padding: 5%;
-}
+/* INICIO */
+/* PARTE SERIES  */
 
 .series-populares{
     width: 100%;
@@ -58,26 +53,74 @@ header{
 
 .art-series{
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.493);
+    background: rgba(135, 124, 172, 0.575);
     width:15%
 }
+
+a img{
+    width:95%;
+    height: 75%;
+    padding: 10px 10px;
+    border: 0px;
+ }
+
+ .art-series .titulos-inicio{
+     text-align: center;
+ }
+
+ .art-series p{
+     text-align: center;
+ }
+
+ .titulos-inicio{
+     font-family: 'Bebas Neue', cursive; 
+     font-size: 35px;
+     margin: 0px;
+ }
+
+/* PARTE PELICULAS */
 .peliculas-populares{
+    width: 100%;
     display: flex;
-    justify-content: first baseline;
+    justify-content: space-between;
 }
 
-.peliculas-populares li{
-    list-style-type: none;
+.art-peliculas{
+    border-radius: 10px;
+    background: rgba(135, 124, 172, 0.575);
+    width:15%
 }
 
+.art-peliculas .titulos-inicio{
+    text-align: center;
+}
+
+.art-peliculas p{
+    text-align: center;
+}
+
+
+/*  LO MAS VISTO */
 .lo-mas-visto{
+    width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
 }
 
-.lo-mas-visto li{
-    list-style-type: none;
+.art-visto{
+    border-radius: 10px;
+    background: rgba(135, 124, 172, 0.575);
+    width:15%
 }
+
+.art-visto .titulos-inicio{
+    text-align: center;
+}
+
+.art-visto p{
+    text-align: center;
+}
+
 
 
 /* detalle serie */
