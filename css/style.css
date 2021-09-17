@@ -222,6 +222,11 @@ a{
 
 /* search-results (roni) */
 
+.search{
+    text-align: center;
+    background-color: rgb(100, 89, 139);
+}
+
 /* tamaño de la imagen */
 .buscado section img{
     width: 70%;
