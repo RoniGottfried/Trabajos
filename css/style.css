@@ -292,5 +292,6 @@ div img{
     border-radius: 10px;
     background-color: rgb(100, 89, 139);
     text-align:center;
+    justify-content: center;
 }
    
