@@ -240,7 +240,7 @@ a{
 
 /* pone todo uno al lado del otro */
 .main{
-    display: flex;
+    display: flex; 
     flex-direction: row;
 }
 
