@@ -16,14 +16,19 @@ header{
 }
 
 #logo{
-    width: 160px;
-    height: 40px;
+    width: 91px;
+    height: auto;
 }
 
+input{
+    border-radius: 5px;
+    color: -internal-light-dark(white, white);
+}
 .botones li {
     list-style-type: none;
     padding: 8px 50px;
     margin: 0px;
+    
 }
 
 .botones li a{
@@ -36,6 +41,7 @@ header{
 .botones{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .partelogo{
@@ -172,9 +178,12 @@ article ul li{
 
 .bloque-sinopsis{
     display: flex;
-    background-color: rgba(135, 124, 172, 0.575);
+    background-color:rgba(135, 124, 172, 0.575);
     width:100%;
     padding: 4%;
+}
+.bloque-sinopsis p{
+    text-align: justify;
 }
 .bloque-serie section{
     display: block;
@@ -218,6 +227,10 @@ article ul li{
     background-color: rgba(135, 124, 172, 0.575);
     width:100%;
     padding: 4%;
+}
+
+.bloque-sinopsis-peli p{
+    text-align: justify;
 }
 .bloque-pelicula section{
     display: block;
@@ -284,8 +297,8 @@ div img{
     display: inline-block;
     width: 230px;
     height: 40px;
-    border-radius: 10px;
-    background-color: rgb(100, 89, 139);
+    /* border-radius: 10px;
+    background-color: rgb(100, 89, 139); */
     text-align:center;
     justify-content: center;
 }
