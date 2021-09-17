@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(46, 45, 45);
+    background: url("https://p4.wallpaperbetter.com/wallpaper/363/97/65/dark-purple-blur-gradation-wallpaper-preview.jpg") no-repeat;
+    background-size: cover;
     font-family: 'Bebas Neue', cursive;
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -10,7 +11,7 @@ body{
 }
 /* header */
 header{
-    background-color:rgb(100, 89, 139);
+    background-color:rgba(135, 124, 172, 0.575);
     padding:1px ;
 }
 
@@ -224,15 +225,12 @@ article ul li{
 }
 
 a{
-    color: blueviolet;
+    color: white;
 }
 
 /* search-results (roni) */
 
-.search{
-    text-align: center ;
-    background-color: rgba(135, 124, 172, 0.575);
-}
+
 
 /* tamaño de la imagen */
 .buscado section img{
@@ -245,16 +243,6 @@ a{
     display: flex;
     flex-direction: row;
 }
-
-/* .similares h1{
-    display: flex;
-    justify-content: center;
-}
-
-.similares li{
-    display: flex;
-    display: inline-block;
-} */
 
 div.detalle{
     display: flex;
