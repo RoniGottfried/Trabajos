@@ -281,6 +281,17 @@ div img{
 
 /* Generos */
 
+.generos-peliculas{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.generos-series{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 
 /* Favoritos */
 
