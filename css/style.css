@@ -50,6 +50,9 @@ input{
 
 
 /* INICIO */
+.toggle-nav{
+    display: none;
+}
 /* PARTE SERIES  */
 
 .series-populares{
@@ -61,7 +64,8 @@ input{
 .art-series{
     border-radius: 10px;
     background: rgba(135, 124, 172, 0.575);
-    width:15%
+    width:15%;
+    height:auto;
 }
 
 a img{
@@ -364,3 +368,54 @@ footer{
 .p-iconos{
     font-size: 100%;
 }
+
+/* RESPONSIVE */
+/* mobile last */
+
+/* @media(max-width:768px){
+  
+} */
+
+
+/* @media(min-width:430px){
+    .toggle-nav{
+        display: inline-block; 
+        background-color: rgb(68, 68, 68);
+        padding: 10px;
+    }
+
+    .botones li a{
+        display: none;
+    }
+
+    .art-series p{
+        display: none;
+    }
+
+    .art-peliculas p{
+        display: none;
+    }
+
+    .art-visto p{
+        display: none;
+    }
+
+    .titulos-inicio{
+        font-size: 25px;
+    }
+
+
+}
+
+ @media(min-width:768px){
+    .toggle-nav{
+         display: none;
+    }
+    
+
+
+}  */
+
+/* @media(min-width:1024px){
+
+} */
