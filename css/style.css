@@ -243,7 +243,9 @@ a{
 
 /* search-results (roni) */
 
-
+.none{
+    display: none;
+}
 
 /* tamaño de la imagen */
 .buscado section img{
