@@ -18,6 +18,12 @@ header{
     background-color:rgba(135, 124, 172, 0.575);
     padding:1px ;
 }
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 #logo{
     width: 91px;
@@ -29,10 +35,8 @@ input{
     color: -internal-light-dark(white, white);
 }
 .botones{
-    list-style-type: none;
     padding: 8px 50px;
     margin: 0px;
-    
 }
 
 .botones a{
@@ -42,23 +46,11 @@ input{
     font-size: 20px;
 }
 
-.contenedor{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.partelogo{
-    list-style-type: none;
-}
-
 .botones1{
-    list-style-type: none;
     padding: 8px 50px;
     margin: 0px;
-    
 }
+
 .botones1 a{
     text-decoration: none;
     color: white;
@@ -67,50 +59,13 @@ input{
 }
 
 
-
 /* INICIO */
 .toggle-nav{
     display: none;
     border-radius: 20px;
    
 }
-/* PARTE SERIES  */
 
-.series-populares{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.art-series{
-    border-radius: 10px;
-    background: rgba(135, 124, 172, 0.575);
-    width:15%;
-    height:auto;
-}
-
-a img{
-    width:95%;
-    height: 290px;
-    padding: 10px 10px;
-    border: 0px;
- }
-
- .art-series .titulos-inicio{
-     text-align: center;
- }
-
- .art-series p{
-     text-align: center;
- }
-
- .titulos-inicio{
-     font-family: 'Bebas Neue', cursive; 
-     font-size: 35px;
-     margin: 0px;
- }
-
-/* PARTE PELICULAS */
 .peliculas-populares{
     width: 100%;
     display: flex;
@@ -122,7 +77,18 @@ a img{
     background: rgba(135, 124, 172, 0.575);
     width:15%
 }
+a img{
+    width:95%;
+    height: 290px;
+    padding: 10px 10px;
+    border: 0px;
+ }
 
+ .titulos-inicio{
+     font-family: 'Bebas Neue', cursive; 
+     font-size: 35px;
+     margin: 0px;
+ }
 .art-peliculas .titulos-inicio{
     text-align: center;
 }
@@ -130,30 +96,6 @@ a img{
 .art-peliculas p{
     text-align: center;
 }
-
-
-/*  LO MAS VISTO */
-.lo-mas-visto{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.art-visto{
-    border-radius: 10px;
-    background: rgba(135, 124, 172, 0.575);
-    width:15%
-}
-
-.art-visto .titulos-inicio{
-    text-align: center;
-}
-
-.art-visto p{
-    text-align: center;
-}
-
-
 
 /* detalle serie */
 .bloque-serie{
@@ -186,9 +128,8 @@ a img{
     font-family: 'Bebas Neue', cursive;
     color: white;
     font-size: 50px;
-    box-sizing: border-box;
     margin: 0%;
-    display: flex;
+  
 }
 
 .tituloyfecha li {
@@ -207,9 +148,11 @@ article ul li{
     width:100%;
     padding: 4%;
 }
+
 .bloque-sinopsis p{
     text-align: justify;
 }
+
 .bloque-serie section{
     display: block;
     justify-content: space-around
@@ -306,38 +249,14 @@ a{
     text-align: center;
 }
 
-/* tamaño de la imagen */
-.buscado section img{
-    width: 70%;
-    height: 500px;
-}
-
 /* pone todo uno al lado del otro */
 .main{
     display: flex; 
     flex-direction: row;
 }
 
-div.detalle{
-    display: flex;
-    justify-content: center;
-}
-
 div img{
     width: 100%;
-}
-
-.detalle{
-    width: 50%;
-}
-
-.otras-sw li{
-    display: flex;
-    display: inline;
-    list-style-type: none;
-    initial-letter-align: right;
-    background-color: rgb(218, 218, 218);
-    font-size: 80%;
 }
 
 /* Generos */
@@ -396,6 +315,7 @@ article.footer{
     font-size: 90%;
     margin-top: 30px;
 }
+
 ul.iconos{
     list-style: none;
     text-align:left;
@@ -406,18 +326,15 @@ ul.noticias{
     text-align: left;
 }
 
-
 .titulos-footer{
     text-align: left;
 }
 
 footer{
-
     background-color: rgba(135, 124, 172, 0.575) ; 
     padding: 5px;
     margin-top: 25px;
     border-radius: 20px;
-
 }
 
 .footer-abajo{
@@ -426,7 +343,6 @@ footer{
     margin-top: 35px;
     font-size: 13px;
 }
-
 
 .p-iconos{
     font-size: 100%;
@@ -437,9 +353,7 @@ footer{
     .toggle-nav{
         display: none;
     }
-    .art-series p {
-        display: none;
-    }
+    
    .art-peliculas p{
        display: none;
    }
@@ -450,9 +364,6 @@ footer{
         display: none;
     }
     
-    .art-visto p{
-        display: none;
-    }
     .botones1{
         display: none;
     }
@@ -466,8 +377,8 @@ footer{
     .footer-abajo{
         margin: 0px;
         align-items: center;
-
     }
+
     h2 {
         font-size: 25px;
     }
@@ -488,14 +399,8 @@ footer{
         height: auto;
     }
 
-    .main-detalle-serie{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
 
-     /* detalle pelicula */
+  /* detalle pelicula */
      .bloque-pelicula{
         flex-direction: column;
         display: flex;
@@ -505,38 +410,21 @@ footer{
     .bloque-pelicula section{
         width: 80%;
     }
-
+    
     .portada-pelicula{
         width: 100%;
         height: auto;
-        margin: 0%;
-    }
-
-    .main-detail-pelicula{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .peliculas-populares{
-        display: flex;
-        
+        margin: 5%;
     }
     
+
+    /* tamaño del article */
     .art-peliculas{
         width: 19%;
     }
     .art-peliculas2{
         width: 19%;
     } 
-
-
-    /* generos  */
-
-    /* detalle generos */
-
-    /* resultado de busqueda */
-
-    /* favoritos */
-   
 }
 
   @media (max-width: 430px){
@@ -544,14 +432,16 @@ footer{
     .toggle-nav{
         display: inline-block; 
     }
-    .botones1{
-        display: none;
-    }
-    .botones a{
-        display: none;
-    }
+    
     div.botones{
         padding: 0px;
+    }
+
+   .botones a{
+        display: none;
+    }
+    .botones1{
+        display: none;
     }
 
     div.contenedor{
@@ -560,60 +450,39 @@ footer{
         justify-content: center;
     }
 
-    .botones li a{
-        display: none;
-    }
-
     h2{
         font-size: 16px;
     }
 
-    .art-series p{
-        display: none;
-    }
-
-    .art-peliculas p{
-        display: none;
-    }
-
-    .art-visto p{
-        display: none;
-    }
-
-    .titulos-inicio{
-        font-size: 25px;
-    }
     .art-peliculas2{
         display: none;
     }
+
     .art-peliculas{
-        width: 48%;
-    }
-    .peliculas-populares{
-        
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .art-peliculas{
-        width: 80%;
+        width: 75%;
         margin: 5px;
     }
 
+    .peliculas-populares{
+        flex-direction: column;
+        align-items: center;
+    }
     
-  
-    /* detalle pelicula */
+    /* detalle serie */
+    .tituloserie{
+        font-size: 45px;
+    }
+    /* detalle peli */
+    .titulo-peli{
+        font-size: 36px;
+    }
+    .imagen-pelicula .portada-pelicula{
+        width: 95%;
+        height: 130px;
+        
+    }
 
-    /* generos  */
-
-
-
-    /* detalle generos */
-
-    /* resultado de busqueda */
-
-    /* favoritos */
-
+   
 }
 
  
