@@ -491,8 +491,10 @@ footer{
     .main-detalle-serie{
         display: flex;
         flex-wrap: wrap;
-
+        justify-content: center;
     }
+    
+
      /* detalle pelicula */
      .bloque-pelicula{
         flex-direction: column;
@@ -514,16 +516,19 @@ footer{
         display: flex;
         flex-wrap: wrap;
     }
-
-    .art-peliculas1{
-        display: none;
+    .peliculas-populares{
+        display: flex;
+        
     }
+    
     .art-peliculas{
-        width: 23%;
+        width: 19%;
     }
     .art-peliculas2{
-        width:23%
-    }
+        width: 19%;
+    } 
+
+
     /* generos  */
 
     /* detalle generos */
@@ -584,7 +589,16 @@ footer{
     .art-peliculas{
         width: 48%;
     }
-    /* detalle serie */
+    .peliculas-populares{
+        
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .art-peliculas{
+        width: 80%;
+        margin: 5px;
+    }
 
     
   
