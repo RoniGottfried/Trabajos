@@ -247,6 +247,13 @@ a{
 
 /* search-results (roni) */
 
+.separacion section{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    
+}
+
 .none{
     display: none;
 }
