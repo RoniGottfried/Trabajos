@@ -354,6 +354,13 @@ div img{
     justify-content: space-between;
 }
 
+
+.boton-mas {
+    align-items: center;
+    font-size: xxx-large;
+    display: flex;
+}
+
 /* Favoritos */
 
 .favoritos{
@@ -584,6 +591,8 @@ footer{
     /* detalle pelicula */
 
     /* generos  */
+
+
 
     /* detalle generos */
 
