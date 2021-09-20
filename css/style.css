@@ -414,9 +414,9 @@ footer{
     .art-series p {
         display: none;
     }
-    .art-peliculas{
-        display: none;
-    }
+   .art-peliculas p{
+       display: none;
+   }
     
     .art-visto p{
         display: none;
@@ -441,7 +441,28 @@ footer{
     }
     
     /* detalle serie */
-  
+    .bloque-serie{
+        flex-direction: column;
+        display: flex;
+        align-items:center;
+    }
+
+    .bloque-serie section{
+        width: 80%;
+    }
+
+    .portada-serie{
+        width: 100%;
+        height: auto;
+    }
+
+    .main-detalle-serie{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+   
     /* detalle pelicula */
 
     /* generos  */
@@ -502,8 +523,8 @@ footer{
         font-size: 25px;
     }
     
-
     /* detalle serie */
+    
   
     /* detalle pelicula */
 
