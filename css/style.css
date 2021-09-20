@@ -9,6 +9,10 @@ body{
     color: white;
     
 }
+
+.main-container{
+    width: 100%;
+}
 /* header */
 header{
     background-color:rgba(135, 124, 172, 0.575);
@@ -24,29 +28,44 @@ input{
     border-radius: 5px;
     color: -internal-light-dark(white, white);
 }
-.botones li {
+.botones{
     list-style-type: none;
     padding: 8px 50px;
     margin: 0px;
     
 }
 
-.botones li a{
+.botones a{
     text-decoration: none;
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
 }
 
-.botones{
+.contenedor{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .partelogo{
     list-style-type: none;
 }
+
+.botones1{
+    list-style-type: none;
+    padding: 8px 50px;
+    margin: 0px;
+    
+}
+.botones1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
 
 
 /* INICIO */
@@ -377,24 +396,49 @@ footer{
     font-size: 100%;
 }
 
-/* RESPONSIVE */ 
-@media(max-width:768px){
-   
-    .art-series p{
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+    .art-series p {
         display: none;
     }
-    .art-peliculas p{
+    .art-peliculas{
         display: none;
     }
+    
     .art-visto p{
+        display: none;
+    }
+    .botones1{
         display: none;
     }
 
     .titulos-inicio{
         font-size: 25px;
     }
+    .iconos{
+        display: none;
+    }
+    .footer-abajo{
+        margin: 0px;
+        align-items: center;
+
+    }
+    h2 {
+        font-size: 25px;
+    }
+    
+
 }
- @media(max-width:430px){
+
+  @media (max-width: 430px){
     .toggle-nav{
         display: inline-block; 
         background-color: rgb(68, 68, 68);
