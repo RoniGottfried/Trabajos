@@ -279,6 +279,33 @@ a{
     display: none;
 }
 
+.art-peliculas1{
+    border-radius: 10px;
+    background: rgba(135, 124, 172, 0.575);
+    width:15%
+}
+
+.art-peliculas1 .titulos-inicio{
+    text-align: center;
+}
+
+.art-peliculas1 p{
+    text-align: center;
+}
+.art-peliculas2{
+    border-radius: 10px;
+    background: rgba(135, 124, 172, 0.575);
+    width:15%
+}
+
+.art-peliculas2 .titulos-inicio{
+    text-align: center;
+}
+
+.art-peliculas2 p{
+    text-align: center;
+}
+
 /* tamaño de la imagen */
 .buscado section img{
     width: 70%;
@@ -417,6 +444,12 @@ footer{
    .art-peliculas p{
        display: none;
    }
+   .art-peliculas1 p{
+    display: none;   
+    }
+    .art-peliculas2 p{
+        display: none;
+    }
     
     .art-visto p{
         display: none;
@@ -461,7 +494,15 @@ footer{
         flex-wrap: wrap;
 
     }
-
+    .art-peliculas1{
+        display: none;
+    }
+    .art-peliculas{
+        width: 23%;
+    }
+    .art-peliculas2{
+        width:23%
+    }
    
     /* detalle pelicula */
 
@@ -522,7 +563,12 @@ footer{
     .titulos-inicio{
         font-size: 25px;
     }
-    
+    .art-peliculas2{
+        display: none;
+    }
+    .art-peliculas{
+        width: 48%;
+    }
     /* detalle serie */
     
   
