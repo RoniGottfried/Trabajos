@@ -418,20 +418,12 @@ footer{
     justify-content: center;
     margin-top: 35px;
     font-size: 13px;
-
 }
+
 
 .p-iconos{
     font-size: 100%;
 }
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px){
 /* index */
@@ -494,6 +486,28 @@ footer{
         flex-wrap: wrap;
 
     }
+     /* detalle pelicula */
+     .bloque-pelicula{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .bloque-pelicula section{
+        width: 80%;
+    }
+
+    .portada-pelicula{
+        width: 100%;
+        height: auto;
+        margin: 0%;
+    }
+
+    .main-detail-pelicula{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .art-peliculas1{
         display: none;
     }
@@ -504,19 +518,6 @@ footer{
         width:23%
     }
    
-    /* detalle pelicula */
-
-    /* generos  */
-
-    /* detalle generos */
-
-    /* resultado de busqueda */
-
-    /* favoritos */
-
-   
-
-    
 }
 
   @media (max-width: 430px){
@@ -570,6 +571,7 @@ footer{
         width: 48%;
     }
     /* detalle serie */
+    
     
   
     /* detalle pelicula */
