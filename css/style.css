@@ -20,9 +20,11 @@ header{
 }
 .contenedor{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+   
 }
 
 #logo{
@@ -32,7 +34,6 @@ header{
 
 input{
     border-radius: 5px;
-    color: -internal-light-dark(white, white);
 }
 .botones{
     padding: 8px 50px;
@@ -104,10 +105,6 @@ a img{
     width: 100%;
 }
 
-.bloque-serie section{
-    width: 50%;
-}
-
 .imagen-serie{
     width: 50%;
     margin: 5%;
@@ -118,32 +115,14 @@ a img{
     margin: 5% ;
 }
 
-.imagen-serie .imagen-pelicula{
-    width: 100%;
-    height: auto;
-    margin: 5%;
-}
-
 .tituloserie{
     font-family: 'Bebas Neue', cursive;
     color: white;
     font-size: 50px;
     margin: 0%;
-  
-}
-
-.tituloyfecha li {
-    list-style-type: none;
-    display: flex;
-}
-
-article ul li{
-    display: flex;
-    justify-content: space-between;
 }
 
 .bloque-sinopsis{
-    display: flex;
     background-color:rgba(135, 124, 172, 0.575);
     width:100%;
     padding: 4%;
@@ -151,11 +130,6 @@ article ul li{
 
 .bloque-sinopsis p{
     text-align: justify;
-}
-
-.bloque-serie section{
-    display: block;
-    justify-content: space-around
 }
 
 
@@ -189,7 +163,6 @@ article ul li{
     margin: 5%;
 }
 
-
 .bloque-sinopsis-peli{
     display: flex;
     background-color: rgba(135, 124, 172, 0.575);
@@ -199,10 +172,6 @@ article ul li{
 
 .bloque-sinopsis-peli p{
     text-align: justify;
-}
-.bloque-pelicula section{
-    display: block;
-    justify-content: space-around
 }
 
 a{
@@ -449,9 +418,7 @@ footer{
         display: none;
     }
 
-    div.contenedor{
-        display: flex;
-        flex-direction: row;
+    .contenedor{
         justify-content: center;
     }
 
