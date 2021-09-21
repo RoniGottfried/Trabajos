@@ -382,6 +382,11 @@ footer{
     h2 {
         font-size: 25px;
     }
+
+    div img{
+        width: 100%;
+        height: 215px;
+    }
     
     /* detalle serie */
     .bloque-serie{
@@ -482,6 +487,10 @@ footer{
         
     }
 
+    div img{
+        width: 100%;
+        height: 400px;
+    }
    
 }
 
