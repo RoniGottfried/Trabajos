@@ -1,12 +1,14 @@
-window.addEventListener('load', function(){
+
+//  Manipulando la query 
     let queryString = location.search; 
 
     let qsToObject = new URLSearchParams(queryString);
   
-    let id = qsToObject.get('id');
-  
-    
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=809187852af3a04706d10c0477580eec`)
+    let movie_id = qsToObject.get('movie_id');
+
+    console.log(movie_id);
+   
+    fetch(`https://api.themoviedb.org/3/movie/${movie_id}?api_key=809187852af3a04706d10c0477580eec`)
         .then(function(response){
             return response.json();
         })
@@ -38,7 +40,9 @@ window.addEventListener('load', function(){
             console.log(error);
         })
 
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=809187852af3a04706d10c0477580eec`)
+    
+    // Extra 
+        fetch(`https://api.themoviedb.org/3/movie/popular?api_key=809187852af3a04706d10c0477580eec`)
         .then(function(response){
             return response.json();
         })
@@ -46,14 +50,15 @@ window.addEventListener('load', function(){
     
             console.log(data);
     
-            for (let i = 0; i < 5; i++){
+            for (let i = 0; i < 6; i++){
                 document.querySelector('.peliculas-populares').innerHTML += `
                 <article class="art-peliculas"> 
-                       <a href="detail-serie.html">
+                       <a href="detail-serie.html?id=${data.results[i].id}">
                        <img class= "img-home" src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="caratula-vis-a-vis">
                        </a>
                        <h2 class="titulos-inicio" >${data.results[i].title}</h2>
-                   </article>
+                       <p>Fecha de estreno: ${data.results[i].release_date}</p>
+                </article>
                 `;
             }
     
@@ -61,5 +66,3 @@ window.addEventListener('load', function(){
         .catch(function(error){
             console.log(`El error fue: ${error}`);
         })
-    
-    })
