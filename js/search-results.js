@@ -1,14 +1,16 @@
-
+// accedo a la query para saber que busco la persona
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString)
+let titulo = document.querySelector(".search")
 
-queryStringObj.get('search');
+// agrego lo que busco la persona a el h1
+titulo.innerHTML += `Busquedas encontradas para: ${queryStringObj}`;
 
 
 
 
 
-fetch(`https://api.themoviedb.org/3/tv/popular?api_key=809187852af3a04706d10c0477580eec`)
+fetch(`https://api.themoviedb.org/3/search/movie?api_key=809187852af3a04706d10c0477580eec`)
     .then(function(response){
         return response.json();
     })
