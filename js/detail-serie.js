@@ -27,8 +27,8 @@ fetch(`https://api.themoviedb.org/3/tv/${tv_id}?api_key=809187852af3a04706d10c04
                 <article>
                     <h1 class="tituloserie">${data.name}</h1>
                      <p>| Calificacion: ${data.popularity} | Genero: 
-                        <a href="detail-genres.html">
-                         ${data.genres.length} 
+                        <a href="genres.html?id${data.id}">
+                         ${data.genres[i].name} 
                         </a> | Estreno: ${data.first_air_date}|
                         <a class= "fav" href="favourite.html">
                         Añadir a favoritos</a>|

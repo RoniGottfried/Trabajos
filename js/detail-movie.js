@@ -24,7 +24,9 @@ window.addEventListener('load', function(){
                     <section class="peli">
                         <article>
                             <h1 class="titulo-peli">${data.title}</h1>
-                            <p>| Calificacion: ${data.popularity} | Genero: <a href="detail-genres.html">${data.genres.length}</a> | Duracion: ${data.runtime}| <a class= "fav" href="favourite.html"> Agregar a favoritos</a>|</p>
+                            <p>| Calificación: ${data.popularity} | Genero: <a href="genres.html?id${data.id}">
+                            ${data.genres[i].name} 
+                           </a>| Duración: ${data.runtime}| <a class= "fav" href="favourite.html"> Agregar a favoritos</a>|</p>
                         </article>
                 
                         <article class="bloque-sinopsis-peli">
@@ -51,8 +53,8 @@ window.addEventListener('load', function(){
      for (let i = 0; i < 6; i++){
          document.querySelector('.peliculas-populares').innerHTML += `
          <article class="art-peliculas"> 
-            <a href="detail-serie.html?id=${data.results[i].id}">
-                 <img class= "img-home" src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="caratula-vis-a-vis">
+            <a href="detail-movie.html?id=${data.results[i].id}">
+                 <img class= "img-home" src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="caratula-creed">
             </a>
             <h2 class="titulos-inicio" >${data.results[i].title}</h2>
             <p>Fecha de estreno: ${data.results[i].release_date}</p>
