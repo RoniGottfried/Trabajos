@@ -35,6 +35,39 @@ window.addEventListener('load', function(){
                     </section>
                 `;
             }
+            let favoritosPeli = []
+    
+            // Selector del botón favorito
+            let buttonFavPeli = document.querySelector('.fav');
+                
+            // localStorage
+            if(localStorage.getItem('favoritosToStringPeli')!=null){
+                favoritosPeli = JSON.parse(localStorage.getItem('favoritosToStringPeli'));
+            
+                if(favoritosPeli.includes(movie_id)) {
+                    buttonFavPeli.innerHTML = `Remover de favoritos`;
+                }else{
+                    buttonFavPeli.innerHTML = `Agregar a favoritos`;
+                }
+            }
+            
+            // Evento del botón agregar/remover favorito
+            buttonFavPeli.addEventListener('click', function(e){
+            
+                e.preventDefault();
+            
+                if (favoritosPeli.includes(movie_id)){
+                    favoritosPeli.splice(favoritosPeli.indexOf(movie_id),1);
+                    buttonFavPeli.innerHTML = `Agregar a favoritos`;
+                }else{
+                    favoritosPeli.push(movie_id);
+                    buttonFavPeli.innerHTML = `Remover de favoritos`;
+                }
+                
+                localStorage.setItem('favoritosToStringPeli', JSON.stringify(favoritosPeli));
+                console.log(localStorage);
+            
+            })
         })
         .catch(function(error){
              console.log(error);

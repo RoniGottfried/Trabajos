@@ -42,7 +42,7 @@ fetch(`https://api.themoviedb.org/3/tv/${tv_id}?api_key=809187852af3a04706d10c04
             </section> 
         `;
     }
-    let favoritos = []
+ let favoritos = []
     
 // Selector del botón favorito
 let buttonFav = document.querySelector('.fav');
@@ -82,6 +82,7 @@ buttonFav.addEventListener('click', function(e){
 })
   
  //   Extra
+
  fetch(`https://api.themoviedb.org/3/tv/popular?api_key=809187852af3a04706d10c0477580eec`)
  .then(function(response){
      return response.json();
