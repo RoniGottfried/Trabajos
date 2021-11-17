@@ -1,5 +1,6 @@
 window.addEventListener('load', function(){
 
+ //  obtengo el id de la QS
     let queryString = location.search; 
 
     let qsToObject = new URLSearchParams(queryString);
@@ -28,9 +29,9 @@ fetch(`https://api.themoviedb.org/3/tv/${tv_id}?api_key=809187852af3a04706d10c04
                      <p>| Calificacion: ${data.popularity} | Genero: 
                         <a href="detail-genres.html">
                          ${data.genres.length} 
-                        </a> | Estreno: ${data.first_air_date}
-                        <a href="favourite.html">
-                        |<i class="far fa-heart"></i></a>|
+                        </a> | Estreno: ${data.first_air_date}|
+                        <a class= "fav" href="favourite.html">
+                        Añadir a favoritos</a>|
                      </p>
                 
                 </article>
@@ -40,8 +41,41 @@ fetch(`https://api.themoviedb.org/3/tv/${tv_id}?api_key=809187852af3a04706d10c04
              </article>
             </section> 
         `;
-
     }
+    let favoritos = []
+    
+// Selector del botón favorito
+let buttonFav = document.querySelector('.fav');
+    
+// localStorage
+if(localStorage.getItem('favoritosToString')!=null){
+    favoritos = JSON.parse(localStorage.getItem('favoritosToString'));
+
+    if(favoritos.includes(tv_id)) {
+        buttonFav.innerHTML = `Remover de favoritos`;
+    }else{
+        buttonFav.innerHTML = `Agregar a favoritos`;
+    }
+}
+
+// Evento del botón agregar/remover favorito
+buttonFav.addEventListener('click', function(e){
+
+    e.preventDefault();
+
+    if (favoritos.includes(tv_id)){
+        favoritos.splice(favoritos.indexOf(tv_id),1);
+        buttonFav.innerHTML = `Agregar a favoritos`;
+    }else{
+        favoritos.push(tv_id);
+        buttonFav.innerHTML = `Remover de favoritos`;
+    }
+    
+    localStorage.setItem('favoritosToString', JSON.stringify(favoritos));
+    console.log(localStorage);
+
+})
+
  })
  .catch(function(error){
     console.log(error);
