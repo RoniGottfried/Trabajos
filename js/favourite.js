@@ -11,7 +11,7 @@ window.addEventListener('load', function(){
     
             console.log(favoritos[i]);
     
-            fetch(`https://api.themoviedb.org/3/tv/popular${favoritos[i]}?api_key=809187852af3a04706d10c0477580eec`)
+            fetch(`https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=809187852af3a04706d10c0477580eec`)
                 .then(function(response){
                     return response.json();
                 })
