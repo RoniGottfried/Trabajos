@@ -1,5 +1,5 @@
 window.addEventListener('load', function(){
-// Obteniendo qs
+    // Obteniendo qs
 
     let queryString = location.search; 
 

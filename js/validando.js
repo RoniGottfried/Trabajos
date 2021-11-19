@@ -6,7 +6,6 @@ window.addEventListener('load', function(){
 
     formulario.addEventListener('submit',function(event) {
         event.preventDefault();
-
          if(campo.value == ""){
              mensajes.innerText = "Campo obligatorio"
             // chequear si puso mas de tres caracteres
@@ -16,12 +15,11 @@ window.addEventListener('load', function(){
             formulario.submit()
         }
 })
-
-// esto se ejecuta siempre, para que este limpio  cuando el usuario ingre al campo --> queremos limpiar el mensaje 
-campo.addEventListener('focus', function(){
-    // limpiar mensaje de error
-    mensajes.innerText = "";
-    // limpiar el valor que tengo en el campo, this habla del elemento donde se verifico el event listener que es el campo
-    this.value = "";
-})
+    // para que este limpio cuando el usuario entre al campo --> limpiar mensaje 
+    campo.addEventListener('focus',function() {
+         // limpiar mensaje de error
+            mensajes.innerText = "" ;
+         // limpiar el valor que tengo en el campo, this habla del elemento donde se verifico el event listener que es el campo
+           campo.value = "";
+     })
 })

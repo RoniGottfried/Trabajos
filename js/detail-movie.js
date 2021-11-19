@@ -1,5 +1,5 @@
 window.addEventListener('load', function(){
-//  Manipulando la query 
+    //  Manipulando la query 
     let queryString = location.search; 
 
     let qsToObject = new URLSearchParams(queryString);
