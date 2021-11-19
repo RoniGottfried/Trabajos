@@ -15,8 +15,8 @@ window.addEventListener('load', function(){
         .then(function(data){
             console.log(data);
 
-            for (let i = 0; i < 1; i++){
-                document.querySelector('.bloque-pelicula').innerHTML += `
+           
+             document.querySelector('.bloque-pelicula').innerHTML += `
                     <section class="imagen-pelicula"> 
                         <img class="portada-pelicula" src="https://image.tmdb.org/t/p/w342${data.poster_path}" alt="portada-shrek">  
                     </section>
@@ -25,7 +25,7 @@ window.addEventListener('load', function(){
                         <article>
                             <h1 class="titulo-peli">${data.title}</h1>
                             <p>| Calificación: ${data.popularity} | Genero: <a href="detail-genres.html?id${data.id}">
-                            ${data.genres[i].name} 
+                            ${data.genres[0].name} 
                            </a>| Duración: ${data.runtime}| <a class= "fav" href="favourite.html"> Agregar a favoritos</a>|</p>
                         </article>
                 
@@ -34,7 +34,7 @@ window.addEventListener('load', function(){
                         </article>
                     </section>
                 `;
-            }
+            
             let favoritosPeli = []
     
             // Selector del botón favorito

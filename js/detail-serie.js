@@ -17,7 +17,7 @@ fetch(`https://api.themoviedb.org/3/tv/${tv_id}?api_key=809187852af3a04706d10c04
  .then(function(data){
     console.log(data);
 
-    for (let i = 0; i < 1; i++){
+    
         document.querySelector('.bloque-serie').innerHTML += `
             <section class="imagen-serie">
                 <img class="portada-serie" src="https://image.tmdb.org/t/p/w342${data.poster_path}" alt="foto la casa de papel"> 
@@ -28,7 +28,7 @@ fetch(`https://api.themoviedb.org/3/tv/${tv_id}?api_key=809187852af3a04706d10c04
                     <h1 class="tituloserie">${data.name}</h1>
                      <p>| Calificacion: ${data.popularity} | Genero: 
                         <a href="detail-genres.html?id${data.id}">
-                         ${data.genres[i].name} 
+                         ${data.genres[0].name} 
                         </a> | Estreno: ${data.first_air_date}|
                         <a class= "fav" href="favourite.html">
                         Añadir a favoritos</a>|
@@ -41,7 +41,7 @@ fetch(`https://api.themoviedb.org/3/tv/${tv_id}?api_key=809187852af3a04706d10c04
              </article>
             </section> 
         `;
-    }
+    
  let favoritos = []
     
 // Selector del botón favorito

@@ -1,31 +1,4 @@
 window.addEventListener('load', function(){
-// validando formularios 
-let formulario = document.querySelector('form');
-let campo = document.querySelector('.formu');
-let mensajes = document.querySelector('.mensaje');
-
-formulario.addEventListener('submit',function(event) {
-    event.preventDefault();
-
-    if(campo.value == ""){
-        mensajes.innerText = "Campo obligatorio"
-        // chequear si puso mas de tres caracteres
-    }else if (campo.value.length < 3){
-        mensajes.innerText = "Ingresar al menos 3 caracteres"
-
-    }else{
-        formulario.submit()
-    }
-})
-
-// esto se ejecuta siempre, para que este limpio  cuando el usuario ingre al campo --> queremos limpiar el mensaje 
-campo.addEventListener('focus', function(){
-    // limpiar mensaje de error
-    mensajes.innerText = "";
-    // limpiar el valor que tengo en el campo, this habla del elemento donde se verifico el event listener que es el campo
-    this.value = "";
-})
-
 // Obteniendo qs
 
     let queryString = location.search; 
@@ -98,7 +71,7 @@ fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=809187852af3a04706d1
         for (let i = 0; i < 6; i++){
             document.querySelector('.lomasvisto-populares').innerHTML += `
             <article class="art-peliculas"> 
-                   <a href="detail-serie.html?id=${data.results[i].id}">
+                   <a href="detail-movie.html?id=${data.results[i].id}">
                    <img class= "img-home" src="https://image.tmdb.org/t/p/w342${data.results[i].poster_path}" alt="caratula-vis-a-vis">
                    </a>
                    <h2 class="titulos-inicio" >${data.results[i].title}</h2>
