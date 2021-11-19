@@ -73,6 +73,18 @@ input{
     justify-content: space-between;
 }
 
+.series-populares{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lomasvisto-populares{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .art-peliculas{
     border-radius: 10px;
     background: rgba(135, 124, 172, 0.575);
