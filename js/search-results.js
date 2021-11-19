@@ -11,7 +11,7 @@ titulo.innerHTML += `Busquedas encontradas para: ${busqueda}`;
 let api = "809187852af3a04706d10c0477580eec";
 
 
-
+// primera fila
 fetch(`https://api.themoviedb.org/3/search/tv?api_key=${api}&language=es&query=${busqueda}`)
     .then(function(response){
         return response.json();
@@ -33,4 +33,29 @@ fetch(`https://api.themoviedb.org/3/search/tv?api_key=${api}&language=es&query=$
     .catch(function(error){
         console.log(`El error fue: ${error}`);
     })
+
+    // segunda fila
+    fetch(`https://api.themoviedb.org/3/search/tv?api_key=${api}&language=es&query=${busqueda}`)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(data){
+        console.log(data);
+
+        for (let i = 5; i < 10; i++){
+            document.querySelector('.series-populares').innerHTML += `
+            <article class="art-peliculas"> 
+                <a href="detail-movie.html?id=${data.results[i].id}">
+                    <img class= "img-home" src="https://image.tmdb.org/t/p/w342/${data.results[i].backdrop_path}" alt="caratula">
+                </a>
+                <h2 class="titulos-inicio" >${data.results[i].name}</h2>
+            </article>
+            `;
+        }
+    })
+    .catch(function(error){
+        console.log(`El error fue: ${error}`);
+    })
+
+    
 
