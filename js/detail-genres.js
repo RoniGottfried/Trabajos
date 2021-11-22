@@ -39,10 +39,10 @@ fetch(`https://api.themoviedb.org/3/discover/tv?api_key=${key}&language=es&with_
     for (let i = 0; i < 6; i++) {
         document.querySelector(".series-populares").innerHTML += `
         <article class="art-peliculas"> 
-            <a href="detail-movie.html?id=${data.results[i].id}">
+            <a href="detail-serie.html?id=${data.results[i].id}">
                 <img class= "img-home" src="https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}" alt="caratula">
             </a>
-            <h2 class="titulos-inicio" >${data.results[i].original_title}</h2>
+            <h2 class="titulos-inicio" >${data.results[i].name}</h2>
         </article>
         `;
     }
