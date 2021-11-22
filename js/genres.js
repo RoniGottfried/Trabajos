@@ -26,7 +26,7 @@ fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=809187852af3a04706d
         for (let i = 0; i < 15; i++){
             document.querySelector('.peliculas-populares').innerHTML += `
             <article class="art-peliculas-generos"> 
-                <a href="./detail-genres.html" class="titulos-inicio-generos" > ${data.genres[i].name} </a>
+                <a href="./detail-genres.html?idGenero=${data.genres[i].id}&genero=${data.genres[i].name}" class="titulos-inicio-generos" > ${data.genres[i].name} </a>
             </article>
             `;
     }

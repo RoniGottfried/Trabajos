@@ -22,7 +22,7 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=${api}&language=es&quer
         for (let i = 0; i < 6; i++){
             document.querySelector('.peliculas-populares').innerHTML += `
             <article class="art-peliculas"> 
-                <a href="detail-movie.html?id=${data.results[i].id}">
+                <a href="detail-movie.html?idGenero=${data.results[i].id}">
                     <img class= "img-home" src="https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}" alt="caratula">
                 </a>
                 <h2 class="titulos-inicio" >${data.results[i].original_title}</h2>
