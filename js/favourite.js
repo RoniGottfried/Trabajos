@@ -2,16 +2,21 @@ window.addEventListener('load', function(){
 
     let favoritos = [];
     
+    // Recuperar los ids del storage.
+    let recuperoStorage = localStorage.getItem('favoritosToString');
+    let favoritosToString = JSON.parse(recuperoStorage);
+
+
     if (localStorage.getItem('favoritosToString')!=null) {
         
-        favoritos = JSON.parse(localStorage.getItem('favoritosToString'));
-        console.log(favoritos);
+        let favoritosObtenidos = JSON.parse(localStorage.getItem('favoritosToString'));
+        console.log(favoritosObtenidos);
        
-        for(let i = 0; i < favoritos.length; i++){
+        for(let i = 0; i < favoritosObtenidos.length; i++){
     
-            console.log(favoritos[i]);
+            console.log(favoritosObtenidos[i]);
     
-            fetch(`https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=809187852af3a04706d10c0477580eec`)
+            fetch(`https://api.themoviedb.org/3/movie/${favoritosObtenidos[i]}?api_key=809187852af3a04706d10c0477580eec`)
                 .then(function(response){
                     return response.json();
                 })
@@ -34,7 +39,16 @@ window.addEventListener('load', function(){
     
     }
         
-    })
+    // else{
+
+    //     document.querySelector('section').innerHTML += `
+    //         <article>
+    //             <h3>No has agregado contenido a favoritos</h3>
+    //         </article>
+    //     `;
+
+    // }
+})
 
 
     
