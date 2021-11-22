@@ -254,6 +254,49 @@ div img{
     justify-content: space-between;
 }
 
+.peliculas-populares{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+   
+}
+
+.series-populares{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+   
+}
+
+.art-peliculas-generos{
+    border-radius: 8px;
+    background: rgba(135, 124, 172, 0.575);
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4px;
+    align-items: stretch;
+}
+
+.art-series-generos{
+    border-radius: 8px;
+    background: rgba(135, 124, 172, 0.575);
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4px;
+    align-items: stretch;
+}
+
+.titulos-inicio-generos{
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 35px;
+    margin: 0px;
+    text-decoration: none;
+}
+
 
 .boton-mas {
     align-items: center;

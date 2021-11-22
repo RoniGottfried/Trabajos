@@ -24,7 +24,7 @@ window.addEventListener('load', function(){
                     <section class="peli">
                         <article>
                             <h1 class="titulo-peli">${data.title}</h1>
-                            <p>| Calificación: ${data.popularity} | Genero: <a href="detail-genres.html?id${data.id}">
+                            <p>| Calificación: ${data.popularity} | Genero: <a href="detail-genres.html?id=${data.genres[0].id}">
                             ${data.genres[0].name} 
                            </a>| Duración: ${data.runtime}| <a class= "fav" href="favourite.html"> Agregar a favoritos</a>|</p>
                         </article>
