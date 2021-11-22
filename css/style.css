@@ -372,6 +372,16 @@ footer{
     font-size: 100%;
 }
 
+.tmdb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fototmdb{
+    padding: 20%;
+}
+
 @media (max-width: 768px){
 /* index */
     .toggle-nav{
