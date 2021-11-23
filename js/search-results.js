@@ -19,6 +19,15 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=${api}&language=es&quer
     .then(function(data){
         console.log(data);
 
+    if (data.results == 0 ) {
+        titulo.innerHTML = `
+            <article class="art-peliculas"> 
+                <p>No se encontraron resultados para la busqueda de: ${busqueda}</p>
+            </article>
+            `;
+        document.querySelector(".borrar1").innerHTML = ""
+        document.querySelector(".borrar2").innerHTML = ""
+    } else{
         for (let i = 0; i < 6; i++){
             document.querySelector('.peliculas-populares').innerHTML += `
             <article class="art-peliculas"> 
@@ -29,6 +38,7 @@ fetch(`https://api.themoviedb.org/3/search/movie?api_key=${api}&language=es&quer
             </article>
             `;
         }
+    }
     })
     .catch(function(error){
         console.log(`El error fue: ${error}`);
